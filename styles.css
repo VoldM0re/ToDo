@@ -209,12 +209,25 @@ hr {
 
 @media (max-width: 380px) {
     body {
-        background-size: contain !important;
-        background-position: center !important;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     main {
-        padding: 15px;
+        padding: 30px 15px;
+        margin: 0;
+    }
+
+    .logo {
+        width: 50px
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
     }
 
     h1 {
@@ -224,14 +237,6 @@ hr {
     .task-input {
         height: auto;
         min-width: 220px;
-    }
-
-    .adding-task .task-box {
-        flex-wrap: wrap;
-    }
-
-    .adding-task .task-box .action_button {
-        width: 100%;
     }
 
     .task-box {
@@ -251,5 +256,15 @@ hr {
 
     .svg {
         width: 75px;
+    }
+}
+
+@media (max-width: 340px) {
+    .adding-task .task-box {
+        flex-wrap: wrap;
+    }
+
+    .adding-task .task-box .action_button {
+        width: 100%;
     }
 }
