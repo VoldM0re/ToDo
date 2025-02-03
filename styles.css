@@ -4,7 +4,6 @@ html {
     margin: 0;
     padding: 0;
     border: none;
-    /* outline: 2px solid red; */
 }
 
 :root {
@@ -20,21 +19,31 @@ html {
 }
 
 body {
-    padding: 222px 0 0;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    padding: 222px 0 0;
+    font-size: 12pt;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 500;
     color: var(--blackish);
     background-color: var(--blackish);
     -ms-overflow-style: none;
-    font-size: 12pt;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.logo {
+    width: 75px
+}
+
+.logo-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 h1 {
@@ -51,13 +60,13 @@ h1 {
 }
 
 main {
-    margin: 0 0 200px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     width: 500px;
     height: max-content;
+    margin: 0 0 200px 0;
     padding: 30px;
     text-align: center;
     background-color: var(--whiteish);
@@ -92,10 +101,10 @@ hr {
 }
 
 .task {
-    cursor: pointer;
     height: fit-content;
     text-align: left;
     word-break: break-word;
+    cursor: pointer;
 }
 
 .task:active {
@@ -141,8 +150,8 @@ hr {
 }
 
 .action_button:hover {
-    transform: scale(1.05);
     color: var(--blackish);
+    transform: scale(1.05);
 }
 
 .action_button:active {
@@ -179,8 +188,8 @@ hr {
 
 @media (max-width: 991px) {
     body {
-        background-size: contain !important;
         background-position: center !important;
+        background-size: contain !important;
     }
 
     main {
@@ -198,6 +207,16 @@ hr {
         width: 90%;
     }
 
+    .logo {
+        width: 50px
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
     .task-input {
         font-size: .7rem;
     }
@@ -209,15 +228,15 @@ hr {
 
 @media (max-width: 380px) {
     body {
-        padding: 30px 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 30px 0;
     }
 
     main {
-        padding: 30px 15px;
         margin: 0;
+        padding: 30px 15px;
     }
 
     .logo {
@@ -235,8 +254,8 @@ hr {
     }
 
     .task-input {
-        height: auto;
         min-width: 220px;
+        height: auto;
     }
 
     .task-box {
@@ -244,8 +263,8 @@ hr {
     }
 
     .action_button {
-        min-width: 40px;
         width: 40px;
+        min-width: 40px;
         min-height: 40px;
         font-size: .8rem;
     }
