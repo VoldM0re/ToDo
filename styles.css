@@ -37,7 +37,9 @@ body::-webkit-scrollbar {
 }
 
 .logo {
-    width: 75px
+    width: 75px;
+    pointer-events: none;
+    user-select: none;
 }
 
 .logo-box {
@@ -183,7 +185,7 @@ hr {
     width: 100px;
     color: var(--placeholder);
     user-select: none;
-    -webkit-user-drag: none;
+    pointer-events: none;
 }
 
 @media (max-width: 991px) {

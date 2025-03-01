@@ -8,7 +8,7 @@ let taskTemplate =
             <input type="checkbox" class="check">
             <span class="task-text">%TEXT%</span>
         </label>
-        <input type="button" class="action_button task-close" value="╳">
+        <input type="button" class="action_button task-close" value="✕">
     </div>`
 
 addButton.addEventListener('click', addTask);
